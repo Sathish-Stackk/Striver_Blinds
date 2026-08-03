@@ -1,0 +1,33 @@
+class Solution:
+    def productExceptSelf(self,nums):
+        
+        n=len(nums)
+        answer=[1] * n
+
+        prefix = 1
+        for i in range(n):
+            answer[i]= prefix
+            prefix *=nums[i]
+
+        suffix =1
+
+        for i in range(n-1,-1,-1):
+            answer[i] *=suffix
+            suffix *=nums[i]
+
+        return answer
+
+nums=[1,2,3,4]
+obj=Solution()
+print(obj.productExceptSelf(nums))
+
+
+# Time Complexity
+
+# We traverse the array twice.
+
+# First loop  → O(n)
+
+# Second loop → O(n)   over all: O(n)
+
+# Space Complexity : 1 (n)
