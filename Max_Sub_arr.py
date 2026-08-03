@@ -14,3 +14,10 @@ class Solution:
 nums = [5,4,-1,7,8]
 obj=Solution()
 print(obj.maxSubArray(nums))
+
+
+#      Kadane's Algorithm #
+
+
+# Time Complexity: O(n)
+# Space Complexity = O(1)
