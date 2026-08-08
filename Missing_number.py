@@ -9,6 +9,6 @@ class Solution:
 
         return xor
 
-#   Complexity
+#   Complexity ::
 # Time  : O(n)
 # Space : O(1)
